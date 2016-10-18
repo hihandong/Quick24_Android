@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="han.anthony.quick24.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/et_num1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_num_view"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="6"
+            android:textColor="#3c3f41"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/et_num2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_num_view"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="6"
+            android:textColor="#3c3f41"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/ev_num3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_num_view"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="6"
+            android:textColor="#3c3f41"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/ev_num4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_num_view"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="6"
+            android:textColor="#3c3f41"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#3c3f41" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:onClick="doClick"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/tv_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:padding="10dp"
+            android:textSize="30sp" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_show_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_show_all"
+        android:onClick="doClick"
+        android:padding="5dp"
+        android:text="显示全部结果"
+        android:textColor="#3c3f41"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/btn_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_num_view"
+        android:onClick="doClick"
+        android:text="新的随机数字"
+        android:textColor="#3c3f41"
+        android:textSize="30sp" />
+</LinearLayout>
